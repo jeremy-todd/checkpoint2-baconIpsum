@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.navBar a {
+    color: black;
+}
+
+.hideMe {
+    color: white;
+}
+
+.navBarArt {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.navBarArt a {
+    color: black;
+}
+
+main {
+    background-color: #2BCDC0;
+    height: 35vh;
+}
+
+#mainArt1 {
+    background-color: #33A8DD;
+    height: 25vh;
+}
+
+#mainArt2 {
+    background-color: #F46731;
+    height: 25vh;
+}
+
+#mainArt3 {
+    background-color: #2BCDC0;
+    height: 25vh;
+}
+
+.mainTitle {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 125px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+}
+
+.mainTitleArt {
+    width: 50%;
+    height: 100%;
+}
+
+.stories {
+    background-color: #1B1B1B;
+    min-height: 60vh;
+}
+
+.story {
+    background-color: #1B1B1B;
+    min-height: 400px;
+}
+
+.articles {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.articlesArt {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+    color: white;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.articlesAbout {
+    width: 50%;
+    min-height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articlesAbout iframe {
+    border: none;
+    width: 100%;
+    height: 65vh;
+    margin: 50px 0 50px 0;
+}
+
+.tile {
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    color: white;
+    margin: 75px auto 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.artTitle {
+    font-size: 60px;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+}
+
+#art1 {
+    border-top: 45px solid #33A8DD;
+    transition: all 0.5s linear;
+}
+
+#art2 {
+    border-top: 45px solid #F46731;
+    transition: all 0.5s linear;
+}
+
+#art3 {
+    border-top: 45px solid #2BCDC0;
+    transition: all 0.5s linear;
+}
+
+#art1:hover {
+    transform: scale(1.25,1.25);
+}
+
+#art2:hover {
+    transform: scale(1.25,1.25);
+}
+
+#art3:hover {
+    transform: scale(1.25,1.25);
+}
+
+@media (max-width: 2275px) {
+    .navBar {
+        font-size: 20px;
+        width: 23%;
+    }
+
+    .navBarArt {
+        font-size: 20px;
+        width: 23%;
+    }
+
+    .mainTitle{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1825px) {
+    .mainTitle {
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 1548px) {
+    .mainTitle {
+        font-size: 78px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .mainTitle {
+        font-size: 75px;
+    }
+
+    .artTitle {
+        font-size: 50px;
+    }
+
+    .tile {
+        font-size: 16px;
+    }
+
+    #art1 {
+        border-top: 30px solid #33A8DD;
+    }
+
+    #art2 {
+        border-top: 30px solid #F46731;
+    }
+    
+    #art3 {
+        border-top: 30px solid #2BCDC0;
+    }
+
+    .articlesArt {
+        font-size: 20px;
+    }
+
+    .articlesAbout {
+        min-height: 70vh;
+    }
+
+    .articlesAbout iframe {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navigation {
+        width: 75%;
+    }
+
+    .navBar {
+        font-size: 15px;
+        width: 20%;
+    }
+
+    .navBarArt {
+        font-size: 15px;
+        width: 20%;
+    }
+
+    .mainTitle {
+        width: 75%;
+        font-size: 65px;
+    }
+
+    .articles {
+        width: 75%;
+    }
+
+    .artTitle {
+        font-size: 35px;
+    }
+
+    .tile {
+        font-size: 14px;
+    }
+
+    .articlesArt {
+        width: 75%;
+        font-size: 18px;
+    }
+
+    .articlesAbout {
+        width: 75%;
+        min-height: 70vh;
+    }
+
+    .articlesAbout iframe {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        width: 90%;
+    }
+
+    .mainTitle {
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .articles {
+        width: 90%;
+    }
+
+    .artTitle {
+        font-size: 25px;
+    }
+
+    .tile {
+        font-size: 12px;
+    }
+
+    .articlesArt {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .articlesAbout {
+        width: 90%;
+        min-height: 70vh;
+    }
+
+    .articlesAbout iframe {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .navigation {
+        width: 100%;
+    }
+
+    .navBar {
+        font-size: 15px;
+        width: 33%;
+    }
+
+    .navBarArt {
+        font-size: 13px;
+        width: 33%;
+    }
+
+    #mainArt1 {
+        background-color: #33A8DD;
+        height: 25vh;
+    }
+    
+    #mainArt2 {
+        background-color: #F46731;
+        height: 25vh;
+    }
+    
+    #mainArt3 {
+        background-color: #2BCDC0;
+        height: 25vh;
+    }
+
+    .mainTitle {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #PrimaryTitle {
+        background-color: #33A8DD;
+    }
+
+    .articles {
+        width: 100%;
+        background-color: #F7F5F6;
+        flex-wrap: wrap;
+    }
+
+    .tile {
+        width: 50%;
+        color: black;
+    }
+
+    .story {
+        background-color: #F7F5F6;
+    }
+
+    .articlesArt {
+        color: black;
+    }
+}
+
+@media (max-width: 375px) {
+    .navBar {
+        font-size: 15px;
+        width: 36%;
+    }
+
+    .navBarArt {
+        font-size: 13px;
+        width: 33%;
+    }
+
+    .mainTitle {
+        font-size: 35px;
+    }
+
+    .tile {
+        width: 60%;
+    }
+}
+
+@media (max-width: 320px) {
+    .navBar {
+        font-size: 12px;
+    }
+
+    .navBarArt {
+        font-size: 12px;
+    }
+
+    .mainTitle {
+        font-size: 30px;
+    }
+    
+    .tile {
+        width: 75%;
+    }
+}
